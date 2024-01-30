@@ -1,0 +1,1 @@
+An open-source platform that provides environments to launch libraries and IDES on the web instead of installing each IDE and resource locally. 

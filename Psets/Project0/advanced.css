@@ -1,0 +1,135 @@
+body{
+    font-family:arial,sans-serif;
+}
+
+.advanced-heading{
+    color: #d93025;
+     font: 20px Roboto,Arial,sans-serif;
+}
+.search-headings {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    padding-top: 20px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #777
+}
+
+.search-headings > #two {
+    margin-right: 370px;
+}
+
+.link {
+    display: flex;
+    justify-content: flex-end;
+   
+  }
+
+.link > a > button {
+    font-size: 10px;
+    color: black;
+    text-transform: uppercase;
+    padding: 5px 5px;
+    border-radius: 10px;
+    border: 2px solid #FAFAFA;
+    
+    box-shadow: 3px 3px #fafafa;
+    cursor: pointer;
+    user-select:none;
+    line-height:100%;
+    height:30px;
+    min-width:120px;
+    box-shadow: none;
+    background-color: #4d90fe;
+    align-items: center;
+    background-image: -moz-linear-gradient(top,#4d90fe,#4787ed);
+    border: 1px solid #3079ed;
+    color: #fff;
+    
+  }
+
+.google-logo {
+    display: flex;
+    justify-content: flex-start;
+
+    height: 25px;
+    
+  }
+  
+.advanced-search {
+    margin-left: 50px;
+}
+
+.advanced-heading {
+    margin-bottom: 20px;
+    padding: 30px 0px;
+}
+
+
+
+div > form > .form-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+}
+
+.labels-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: #777
+
+}
+.inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: #777
+
+}
+.labels-2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: #777
+}
+
+.inputs > div > input {
+    width: 500px;
+    height: 18px;
+}
+
+.these-words {
+    padding-bottom: 30px;
+    color: #777
+}
+.exact-words {
+    padding-bottom: 30px;
+    color: #777
+}
+
+.any {
+    padding-bottom: 30px;
+    color: #777
+
+}
+
+input[type=submit] {
+    user-select:none;
+    line-height:100%;
+    height:30px;
+    min-width:120px;
+    box-shadow: none;
+    background-color: #4d90fe;
+    align-items: center;
+    background-image: -moz-linear-gradient(top,#4d90fe,#4787ed);
+    border: 1px solid #3079ed;
+    color: #fff;
+    margin-top: 20px;
+    margin-left: 400px;
+}
+

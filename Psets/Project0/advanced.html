@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Search</title>
+    <link rel="stylesheet" href="advanced.css">
+</head>
+<body>
+    <div class="link"><a href="index.html"><button>Google Search</button></a></div>
+    <div class="google-logo">
+        <img src="logo.png" alt="Google logo">
+    </div>
+    <div class="advanced-search">
+        
+        <div class="advanced-heading">
+            <label for="">Advanced Search</label>
+        </div>
+        <div class="search-headings">
+            <span>
+                <label for="">Find pages with...</label>
+            </span>
+            <span id="two">
+                <label for="">To do this in the search box.</label>
+            </span>
+            
+        </div>
+
+        <div class="advanced-form">
+            <form action="https://www.google.com/advanced_search?" method="GET" name="f">
+
+            <div class="form-container">
+               
+
+                 <div class="labels-1">
+                    <div class="these-words">
+                        <label for="these">all these words:</label>
+                    </div>
+                   <div class="exact-words"><label for="exact">this exact word or phrase:</label></div>  
+                   <div class="any"><label for="any">any of these words:</label></div>  
+                   <div class="none"><label for="none">none of these words:</label></div>  
+                 </div>
+
+                 <div class="inputs">
+                   <div class="these-words"> <input type="text"   name="q" id="these"> </div>
+                   <div class="exact-words"> <input type="text"   name="q" id="exact"> </div>
+                   <div class="any"> <input type="text"   name="q" id="any"> </div>
+                   <div class="none"> <input type="text"   name="q" id="none"> </div> 
+                    
+                 </div>
+
+                 <div class="labels-2">
+                    <div class="these-words"> <label for="these">Type the important words: tri-colour rat terrier</label></div>
+                    <div class="exact-words"> <label for="exact">Put exact words in quotes: "rat terrier"</label></div>
+                    <div class="any"> <label for="any">Type OR between all the words you want: miniature OR standard</label></div>
+                    <div class="none"><label for="none">Put a minus sign just before words that you don't want:<br> -rodent, -"Jack Russell"</label></div>
+                    
+                 </div>
+            </div>
+            <input type="submit" value="Advanced Search">
+                
+        </form>
+        </div>
+
+    </div>
+</body>
+</html>
