@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using Selectors</title>
+    <style>
+        /* Using attributes selector */
+
+        a[href="https://www.amazon.com/"] {
+            color: red;
+        }
+        /* Button styling */
+        
+        button {
+            background-color: red;
+            width: 200px;
+            height: 50px;
+            font-size: 24px;
+
+        }
+
+        /* Pseudoclass selection method in action */
+
+        button:hover {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <ol>
+        <li><a href="https://www.google.com/">Google</a></li>
+        <li><a href="https://www.amazon.com/">Amazon</a></li>
+        <li><a href="https://www.facebook.com/">Facebook</a></li>
+    </ol>
+    <!-- Button tags -->
+    <button>Button 1</button>
+    <button>Button 2</button>
+    <button>Button 3</button>
+</body>
+</html>

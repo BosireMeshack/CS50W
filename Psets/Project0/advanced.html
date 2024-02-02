@@ -7,10 +7,18 @@
     <link rel="stylesheet" href="advanced.css">
 </head>
 <body>
+    <!-- Google Homepage Button -->
+
     <div class="link"><a href="index.html"><button>Google Search</button></a></div>
+   
+    <!-- Google logo -->
+
     <div class="google-logo">
         <img src="logo.png" alt="Google logo">
     </div>
+
+    <!-- Advanced Search Heading -->
+
     <div class="advanced-search">
         
         <div class="advanced-heading">
@@ -26,11 +34,14 @@
             
         </div>
 
+        <!-- Advanced Search Form -->
+
         <div class="advanced-form">
-            <form action="https://www.google.com/advanced_search?" method="GET" name="f">
+            <form action="https://www.google.com/search" method="get">
 
             <div class="form-container">
                
+                <!-- Advanced Search Input Labels -->
 
                  <div class="labels-1">
                     <div class="these-words">
@@ -41,13 +52,17 @@
                    <div class="none"><label for="none">none of these words:</label></div>  
                  </div>
 
+                 <!-- Advanced Search Input Tabs -->
+
                  <div class="inputs">
-                   <div class="these-words"> <input type="text"   name="q" id="these"> </div>
-                   <div class="exact-words"> <input type="text"   name="q" id="exact"> </div>
-                   <div class="any"> <input type="text"   name="q" id="any"> </div>
-                   <div class="none"> <input type="text"   name="q" id="none"> </div> 
+                   <div class="these-words"> <input type="text"   name="as_q" id="these"> </div>
+                   <div class="exact-words"> <input type="text"   name="as_epq" id="exact"> </div>
+                   <div class="any"> <input type="text"   name="as_oq" id="any"> </div>
+                   <div class="none"> <input type="text"   name="as_eq" id="none"> </div> 
                     
                  </div>
+
+                 <!-- Labels for form inputs -->
 
                  <div class="labels-2">
                     <div class="these-words"> <label for="these">Type the important words: tri-colour rat terrier</label></div>
@@ -57,7 +72,9 @@
                     
                  </div>
             </div>
-            <input type="submit" value="Advanced Search">
+            <!-- Advance Search Button -->
+
+            <input type="submit" value="Advanced Search" name="Advanced Search">
                 
         </form>
         </div>
