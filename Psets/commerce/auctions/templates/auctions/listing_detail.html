@@ -1,0 +1,14 @@
+{% extends "auctions/layout.html" %}
+
+{% block body %}
+    <h2> {{ listing.title }} </h2>
+    <p>Image: {{ listing.image_url }}</p>
+    <p>Decription: {{listing.description }} </p>
+    <p>Amount: {{ listing.start_bid }}</p>
+    <p>Current Bid: {{ listing.current_bid }}</p>
+    {% comment %} <p>Category: {{ listing.category }} </p> {% endcomment %}
+    <p>Posted on: {{listing.date_created}} </p>
+
+
+
+{% endblock %}
