@@ -3,8 +3,7 @@ from django.db import models
 
 
 class User(AbstractUser):
-    def __str__(self):
-        return self.username
+    pass
 
 class Category(models.Model):
 
@@ -16,24 +15,26 @@ class Category(models.Model):
     ]
 
 
-    category = models.CharField(max_length=255, choices=CATEGORIES)
+    category_name = models.CharField(max_length=255, choices=CATEGORIES)
     
     def __str__(self):
-        return self.category_name
+        return f"{self.category_name}"
 
 class Listing(models.Model):
-    auctioneer = models.ForeignKey(User, on_delete=models.CASCADE, related_name="auctioneer")
+    auctioneer = models.ForeignKey(User, on_delete=models.CASCADE, blank=True, null=True, related_name="auctioneer")
     title = models.CharField(max_length=255)
     start_bid = models.DecimalField(max_digits=10, decimal_places=2)
     current_bid = models.DecimalField(max_digits=10, decimal_places=2,default=0)
-    image_url = models.URLField()
-    description = models.TextField()
+    image_url = models.CharField(max_length=100)
+    description = models.CharField(max_length=500)
     date_created = models.DateTimeField(auto_now_add=True)
     closed = models.BooleanField(default=False)
-    category = models.ForeignKey(Category, on_delete=models.CASCADE)
+    category = models.ForeignKey(Category, on_delete=models.CASCADE, blank=True, null=True, related_name="category")
 
     def __str__(self):
-        return f"{self.title} {self.image_url} {self.description} {self.start_bid} {self.date_created} {self.category} {self.current_bid} {self.closed}"
+        return f"{self.title}"
+
+    
 
 
 class Bid(models.Model):

@@ -5,7 +5,7 @@ from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render, redirect, get_object_or_404
 from django.urls import reverse
 from .models import  Category, Listing, Bid, Comments, Watchlist, Winner
-from .models import User
+from .models import User, Listing
 from .forms import ListingForm
 
 
@@ -71,11 +71,15 @@ def register(request):
 # Creation of new listing
 @login_required
 def create_listing(request):
+
     if request.method == 'POST':
         form = ListingForm(request.POST)
         if form.is_valid():
-            form.save()
-            return redirect('list_details') #Returns a detail page of the saved list
+            
+            listing = form.save(commit=False)
+            listing.auctioneer = request.user
+            listing.save()
+            return redirect('index') #Returns a detail page of the saved list
     else:
         form = ListingForm()
     return render(request, 'auctions/create.html', 
