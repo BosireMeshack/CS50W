@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <script>
+        // let is a keyword for dynamic variable definition
+        // const is a keyword for static variable definition
+       
+        function hello() {
+            const heading = document.querySelector('h1');
+            if(heading.innerHTML==='Hello')
+            {
+                heading.innerHTML = 'Good bye';
+            }
+            else {
+                heading.innerHTML = 'Hello';
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Hello</h1>
+    <button onclick="hello()">Click Here!</button>
+</body>
+</html>

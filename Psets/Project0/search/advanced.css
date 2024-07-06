@@ -1,35 +1,11 @@
 body{
     font-family:arial,sans-serif;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    min-width:400px;
-    font-size: 14px;
-    
-
-}
-.image {
-    display: flex;
-    /* justify-content: flex-start; */
-    max-height: 100%;
-    height: 80px;
-    justify-content: center;
-    margin-top: 250px;
-    
-  }
-
-  div > .searchbar {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    display: relative;
-    
-    width: 100%;
 }
 
-
-
+.advanced-heading{
+    color: #d93025;
+     font: 20px Roboto,Arial,sans-serif;
+}
 .search-headings {
     display: flex;
     justify-content: space-between;
@@ -51,30 +27,31 @@ body{
   }
 
 .link > a > button {
-    font-size: 10px;
-    color: black;
-    text-transform: uppercase;
-    padding: 5px 5px;
-    border-radius: 10px;
-    border: 2px solid #FAFAFA;
-    
-    box-shadow: 3px 3px #fafafa;
-    cursor: pointer;
+    padding: 0 16px;
+    line-height: 27px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
     user-select:none;
     line-height:100%;
-    height:30px;
-    min-width:120px;
+    height:36px;
+    min-width:54px;
     box-shadow: none;
-    background-color: #4d90fe;
+    background-color: #f8f9fa;
     align-items: center;
-    background-image: -moz-linear-gradient(top,#4d90fe,#4787ed);
-    border: 1px solid #3079ed;
-    color: #fff;
+    text-align: center;
+    border: 1px solid #f8f9fa;
+    color: #3c4043;
+    cursor: pointer;
     
   }
 
+.google-logo {
+    display: flex;
+    justify-content: flex-start;
 
-
+    height: 25px;
+    
+  }
   
 .advanced-search {
     margin-left: 50px;
@@ -137,7 +114,7 @@ div > form > .form-container{
 
 }
 
-input[type=submit], a {
+input[type=submit] {
     user-select:none;
     line-height:100%;
     height:30px;
@@ -148,18 +125,7 @@ input[type=submit], a {
     background-image: -moz-linear-gradient(top,#4d90fe,#4787ed);
     border: 1px solid #3079ed;
     color: #fff;
-    
-    
-}
-
-form {
-    align-items: center;
-    text-align: center;
-    
-}
-
-input[type=text] {
-    border-radius: 50px;
-    width: 350px;
     margin-top: 20px;
+    margin-left: 400px;
 }
+
